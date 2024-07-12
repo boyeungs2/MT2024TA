@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 94fcb8ce346908e4394be87b767d0a02
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_TrackParts/TrackVariant/RTC_StraightLong
+    Variant.prefab
+  uploadId: 483815

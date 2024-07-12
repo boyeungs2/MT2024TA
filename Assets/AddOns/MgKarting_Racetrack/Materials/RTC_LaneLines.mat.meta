@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b272ccb73d9e2594ea930e1ce7e17316
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Materials/RTC_LaneLines.mat
+  uploadId: 483815

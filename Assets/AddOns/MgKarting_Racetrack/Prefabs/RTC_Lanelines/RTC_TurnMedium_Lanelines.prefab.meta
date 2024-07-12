@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e36b9122fa9693a48ae9e0f1da1e1941
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_Lanelines/RTC_TurnMedium_Lanelines.prefab
+  uploadId: 483815

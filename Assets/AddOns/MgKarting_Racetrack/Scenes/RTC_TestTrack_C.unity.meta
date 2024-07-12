@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f4beb6c0e18aa334bae976ede5003a4c
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Scenes/RTC_TestTrack_C.unity
+  uploadId: 483815

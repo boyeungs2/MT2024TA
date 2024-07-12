@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0b93f99de3e3edd41b13f35c091e1bdd
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_TrackParts/TrackVariant/RTC_TurnMedium
+    Variant.prefab
+  uploadId: 483815

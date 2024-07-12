@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9a8b2b01aa2fc8746b3771430534fcc0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_TrackParts/RTC_TurnLong.prefab
+  uploadId: 483815

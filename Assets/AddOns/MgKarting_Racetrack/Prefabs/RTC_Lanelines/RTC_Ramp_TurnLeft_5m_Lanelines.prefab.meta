@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bbe61940c01964a4cbb43b90ce0365e1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_Lanelines/RTC_Ramp_TurnLeft_5m_Lanelines.prefab
+  uploadId: 483815

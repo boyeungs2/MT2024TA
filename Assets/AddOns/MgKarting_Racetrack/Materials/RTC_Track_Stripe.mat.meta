@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9481e9afd8ae89c47988f6384e94f036
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Materials/RTC_Track_Stripe.mat
+  uploadId: 483815

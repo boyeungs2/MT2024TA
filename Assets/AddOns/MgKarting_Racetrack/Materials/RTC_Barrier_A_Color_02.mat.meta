@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2d4507ea4b44cf44e87cdc5d80747904
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Materials/RTC_Barrier_A_Color_02.mat
+  uploadId: 483815

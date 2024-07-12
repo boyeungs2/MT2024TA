@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 697929c848ba85c4a91afb0adce3e789
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_Lanelines/RTC_TurnLong_Lanelines.prefab
+  uploadId: 483815

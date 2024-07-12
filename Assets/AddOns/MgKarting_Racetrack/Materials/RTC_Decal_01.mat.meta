@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8efaf0d309e48b64390e07ac3f8ce968
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Materials/RTC_Decal_01.mat
+  uploadId: 483815

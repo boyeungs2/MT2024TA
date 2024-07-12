@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ae1bbc85b08b59740949b6f3283dc002
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_Lanelines/RTC_ChicaneS_Left_Lanelines.prefab
+  uploadId: 483815

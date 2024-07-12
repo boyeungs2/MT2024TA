@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b8bc97ff711f08549be76024225f0d48
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_TrackParts/RTC_StraightShort.prefab
+  uploadId: 483815

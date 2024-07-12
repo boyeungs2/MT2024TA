@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1b76a6a36894da542b05b92cedeb329e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 174459
+  packageName: Racetrack - Karting Microgame Add-Ons
+  packageVersion: 2.0.0
+  assetPath: Assets/AddOns/MgKarting_Racetrack/Prefabs/RTC_Lanelines/RTC_BankLeft_Straight_Lanelines.prefab
+  uploadId: 483815
