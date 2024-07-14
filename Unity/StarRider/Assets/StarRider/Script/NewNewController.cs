@@ -26,6 +26,14 @@ public class NewNewController : MonoBehaviour
     private WheelFrictionCurve forwardFriction, sidewayFriction;
     private float tempo;
 
+    private float maxDriftGauge = 50f;
+    private float driftGaugeIncrement = 10f;
+    public float driftGauge = 0f;
+    public bool isBoosting = false;
+    public int boosterNum = 0;
+    private float boostTime = 2f;  // booster duration
+    private float boostTimer = 0f;  // booster timer
+
     [Header("Debug")]
     public float[] slip = new float[4];
 
@@ -43,6 +51,7 @@ public class NewNewController : MonoBehaviour
         GetFriction();
         AdjustTraction();
         CheckWheelSpin();
+        UpadateDriftGauge();
     }
 
     private void MoveKart()
@@ -64,8 +73,24 @@ public class NewNewController : MonoBehaviour
         //    }
         //}
 
-        if (IM.boosting) {
-            rigidbody.AddForce(-Vector3.forward * thrust);
+        if (isBoosting)
+        {
+            //rigidbody.AddForce(-Vector3.forward * thrust);
+            rigidbody.AddForce(transform.forward * 5000);
+
+            boostTimer += Time.deltaTime;
+            if (boostTimer >= boostTime)
+            {
+                isBoosting = false;
+                boostTimer = 0f;
+            }
+        }
+        else if (IM.boosting && boosterNum > 0)
+        {
+            print("booster!!!!");
+            isBoosting = true;
+            boosterNum--;
+            boostTimer = 0f;
         }
     }
 
@@ -128,7 +153,7 @@ public class NewNewController : MonoBehaviour
 
     private void AdjustTraction()
     {
-        if (!IM.handbrake)
+        if (!IM.drifting)
         {
             forwardFriction = wheels[0].forwardFriction;
             sidewayFriction = wheels[0].sidewaysFriction;
@@ -142,7 +167,7 @@ public class NewNewController : MonoBehaviour
                 wheels[i].sidewaysFriction = sidewayFriction;
             }
         }
-        else if (IM.handbrake)
+        else if (IM.drifting)
         {
             forwardFriction = wheels[0].forwardFriction;
             sidewayFriction = wheels[0].sidewaysFriction;
@@ -172,9 +197,9 @@ public class NewNewController : MonoBehaviour
     {
         float blind = 0.28f;
 
-        if (Input.GetKey(KeyCode.LeftShift))
-            rigidbody.AddForce(transform.forward * 15000);
-        if (IM.handbrake)
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //    rigidbody.AddForce(transform.forward * 15000);
+        if (IM.drifting)
         {
             for (int i = 0; i < 4; i++) {
                 WheelHit wheelHit;
@@ -208,6 +233,20 @@ public class NewNewController : MonoBehaviour
             else
             {
                 handBrakeFriction = tempo;
+            }
+        }
+    }
+
+    private void UpadateDriftGauge()
+    {
+        if (IM.drifting)
+        {
+            driftGauge += driftGaugeIncrement * Time.deltaTime;
+
+            if (driftGauge >= maxDriftGauge)
+            {
+                boosterNum++;
+                driftGauge = 0f;
             }
         }
     }
