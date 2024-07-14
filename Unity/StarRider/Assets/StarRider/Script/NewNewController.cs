@@ -14,8 +14,8 @@ public class NewNewController : MonoBehaviour
     private new Rigidbody rigidbody;
 
     [Header("Variables")]
-    public float handBrakeFrictionMultiplier = 2f;
-    public float handBrakeFriction = 0f;
+    public float driftFrictionMultiplier = 2f;
+    public float driftFriction = 0f;
     public float KPH;       // km per hour
     public float brakePower;
     public float downForceValue = 50f;
@@ -62,16 +62,16 @@ public class NewNewController : MonoBehaviour
 
         KPH = rigidbody.velocity.magnitude * 3.6f;
 
-        //if (IM.handbrake) {
-        //    for (int i = 0; i < wheels.Length; i++) {
-        //        wheels[i].brakeTorque = 300 * 50f * Time.deltaTime;
-        //    }
-        //}
-        //else {
-        //    for (int i = 0; i < wheels.Length; i++) {
-        //        wheels[i].brakeTorque = 0;
-        //    }
-        //}
+        if (IM.handbrake) {
+            for (int i = 0; i < wheels.Length; i++) {
+                wheels[i].brakeTorque = 300 * 50f * Time.deltaTime;
+            }
+        }
+        else {
+            for (int i = 0; i < wheels.Length; i++) {
+                wheels[i].brakeTorque = 0;
+            }
+        }
 
         if (isBoosting)
         {
@@ -158,8 +158,8 @@ public class NewNewController : MonoBehaviour
             forwardFriction = wheels[0].forwardFriction;
             sidewayFriction = wheels[0].sidewaysFriction;
 
-            forwardFriction.extremumValue = forwardFriction.asymptoteValue = ((KPH * handBrakeFrictionMultiplier) / 300) + 1;
-            sidewayFriction.extremumValue = sidewayFriction.asymptoteValue = ((KPH * handBrakeFrictionMultiplier) / 300) + 1;
+            forwardFriction.extremumValue = forwardFriction.asymptoteValue = ((KPH * driftFrictionMultiplier) / 300) + 1;
+            sidewayFriction.extremumValue = sidewayFriction.asymptoteValue = ((KPH * driftFrictionMultiplier) / 300) + 1;
 
             for (int i = 0; i < wheels.Length; i++)
             {
@@ -173,8 +173,8 @@ public class NewNewController : MonoBehaviour
             sidewayFriction = wheels[0].sidewaysFriction;
 
             float velocity = 0f;
-            forwardFriction.extremumValue = forwardFriction.asymptoteValue = Mathf.SmoothDamp(forwardFriction.asymptoteValue, handBrakeFriction, ref velocity, 0.05f * Time.deltaTime);
-            sidewayFriction.extremumValue = sidewayFriction.asymptoteValue = Mathf.SmoothDamp(sidewayFriction.asymptoteValue, handBrakeFriction, ref velocity, 0.05f * Time.deltaTime);
+            forwardFriction.extremumValue = forwardFriction.asymptoteValue = Mathf.SmoothDamp(forwardFriction.asymptoteValue, driftFriction, ref velocity, 0.05f * Time.deltaTime);
+            sidewayFriction.extremumValue = sidewayFriction.asymptoteValue = Mathf.SmoothDamp(sidewayFriction.asymptoteValue, driftFriction, ref velocity, 0.05f * Time.deltaTime);
 
             for (int i = 2; i < 4; i++) 
             {
@@ -217,22 +217,22 @@ public class NewNewController : MonoBehaviour
 
             if (wheelHit.sidewaysSlip < 0)
             {
-                tempo = (1 + -IM.horizontal) * Mathf.Abs(wheelHit.sidewaysSlip * handBrakeFrictionMultiplier);
+                tempo = (1 + -IM.horizontal) * Mathf.Abs(wheelHit.sidewaysSlip * driftFrictionMultiplier);
                 if (tempo < 0.5) tempo = 0.5f;
             }
             if (wheelHit.sidewaysSlip > 0)
             {
-                tempo = (1 + IM.horizontal) * Mathf.Abs(wheelHit.sidewaysSlip * handBrakeFrictionMultiplier);
+                tempo = (1 + IM.horizontal) * Mathf.Abs(wheelHit.sidewaysSlip * driftFrictionMultiplier);
                 if (tempo < 0.5) tempo = 0.5f;
             }
             if (wheelHit.sidewaysSlip > .99f || wheelHit.sidewaysSlip < -.99f)
             {
                 float velocity = 0f;
-                handBrakeFriction = Mathf.SmoothDamp(handBrakeFriction, tempo * 3, ref velocity, 0.1f * Time.deltaTime);
+                driftFriction = Mathf.SmoothDamp(driftFriction, tempo * 3, ref velocity, 0.1f * Time.deltaTime);
             }
             else
             {
-                handBrakeFriction = tempo;
+                driftFriction = tempo;
             }
         }
     }
