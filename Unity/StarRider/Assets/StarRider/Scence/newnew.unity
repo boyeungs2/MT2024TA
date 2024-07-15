@@ -375,7 +375,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -839,17 +839,17 @@ PrefabInstance:
     - target: {fileID: 1135966359408980219, guid: 00749f242a126c4488c078994781743b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1135966359408980219, guid: 00749f242a126c4488c078994781743b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.32
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 1135966359408980219, guid: 00749f242a126c4488c078994781743b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -74.26
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1135966359408980219, guid: 00749f242a126c4488c078994781743b,
         type: 3}
@@ -886,10 +886,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1856776142548680269, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 8794459280913094394, guid: b6590a049c17b4642a297af9cbbbbc3a,
+        type: 3}
+    - target: {fileID: 3024806506437160959, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1656744044020689062, guid: b6590a049c17b4642a297af9cbbbbc3a,
+        type: 3}
     - target: {fileID: 3866521642224543718, guid: 00749f242a126c4488c078994781743b,
         type: 3}
       propertyPath: m_Name
       value: Kart_tmp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515044389918266108, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5410104721861512981, guid: b6590a049c17b4642a297af9cbbbbc3a,
+        type: 3}
+    - target: {fileID: 7014803949633137813, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5987116518065481554, guid: b6590a049c17b4642a297af9cbbbbc3a,
+        type: 3}
+    - target: {fileID: 7137841786809651757, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5314541573803269148, guid: b6590a049c17b4642a297af9cbbbbc3a,
+        type: 3}
+    - target: {fileID: 9150286317787357204, guid: 00749f242a126c4488c078994781743b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
